@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <title>Preservando lo que nos queda</title>
+    <style>
+    #menu li{display: inline-block;}
+    #menu li a:hover{background-color:#C186EC;}
+    #menu li a{padding: 15px 40px;}
+
+    .card-grid{
+          position: relative;
+          transform-style: preserve-3d;
+          transition: .7s ease;
+ 
+        }
+        .front,.back{
+          
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+        }
+        .back{
+          background: #f1f1f1;
+          transform: rotateY(180deg);
+        }
+        .card-grid:hover {
+          transform: rotateY(180deg);
+        }
+
+    
+  </style>
+  
+  </head>
+  <body>
+      <div class="jumbotron p-3 mb-2 bg-secondary text-white">  
+            <div id="Animal" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                        <button type="button" data-bs-target="#Animal" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                        
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Imagenes/dino1.jpg" class="d-block w-100" alt="imagen1" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/dino2.jpg" class="d-block w-100" alt="imagen2" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/dino3.jpg" class="d-block w-100" alt="imagen3" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/dino4.jpg" class="d-block w-100" alt="imagen4" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/dino5.jpg" class="d-block w-100" alt="imagen5" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Polar.jpg" class="d-block w-100" alt="imagen6" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Lemur.jpg" class="d-block w-100" alt="imagen7" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Mono.jpg" class="d-block w-100" alt="imagen8" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Salamandra.jpg" class="d-block w-100" alt="imagen9" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Vuelo.jpg" class="d-block w-100" alt="imagen10" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Tigre.jpg" class="d-block w-100" alt="imagen11" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Lince2.jpg" class="d-block w-100" alt="imagen12" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Leo.jpg" class="d-block w-100" alt="imagen13" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Azul.jpg" class="d-block w-100" alt="imagen14" height="700">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Delfin.jpg" class="d-block w-100" alt="imagen15" height="700 ">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Tortuga.jpg" class="d-block w-100" alt="imagen16" height="700">
+                      </div>
+                      
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#Animal" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#Animal" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+      </div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Barra de tareas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Causas.html">Causas</a></li>
+            <li><a class="dropdown-item" href="Reflexión.html">Reflexión</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+      <hr>
+        <h1 class="text-center" style="color: ##438D0C"><u><B>PRESERVANDO LO QUE NOS QUEDA</B></u></h1>
+      <hr>
+
+      <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p><U><B><h3 class="animated infinite bounce"> Descubre lo que hay detrás de cada especie</h3></B></U></p>
+      </div>
+    </div>
+    </div>
+
+    <hr>
+
+
+      
+    
+
+
+      <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Leo2.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>LEOPARDO DE LAS NIEVES</h2>Este especie de felinos vive en las montañas con más de 3.000 metros de altitud de Asia Central, como las del Himalaya. Esta montaña es un ecosistema vulnerable al cambio climático y todas las especies que habitan allí sufren graves consecuencias que contribuyen a la disminución de ejemplares de diferentes especies, algo que ha hecho que los leopardos de las nieves tengan que acercarse al ganado de los poblados más cercanos a alimentarse por no tener otras presas que cazar. Solo 4.000 ejemplares del leopardo de las nieves se encuentran en libertad, según la organización WWF. Datos que hacen que esta especie se encuentre en La Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN). Cabe destacar que, cada año mueren entre 220 y 450 ejemplares por la caza furtiva, cuatro ejemplares por semana.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Jaguar.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>JAGUAR</h2>Habita en la región selvática de Colombia, se extiende desdé el Sur de Estados Unidos hasta el Norte de Argentina, prefiere las selvas con ríos y caños. Sus principales amenazas son: El comercio ilegal de la piel y de las crías, la cacería deportiva, el control de depredadores y la sobreexplotación de sus presas. También, la pérdida de hábitat por deforestación de zonas boscosas con fines forestales y mineros o para su transformación en áreas agrícolas y ganaderas.</div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Condor.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>CÓNDOR</h2>Se encuentra a lo largo de la Cordillera de los Andes, y en Colombia se puede encontrar específicamente en los nevados. Es el ave más grande y de mayor anchura de los Andes. Realiza su vuelo a mayor altura que las demás aves. El Cóndor es un ave grande monógama, es decir que tiene una sola pareja durante toda su vida. Sus principales amenazas son: la extinción de los grandes mamíferos latinoamericanos y la reducción de especies como venados y dantas han contribuido en la disminución de las poblaciones de estos depredadores, puesto que se alimentan de carroña(animales muertos). Adicionalmente, desde el período de conquista ha estado afectado por la cacería e incluso la caza deportiva.</div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  <hr>
+      
+            <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Manati.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>MANATÍ</h2>Conocido como manatí de Las Antillas, tiene una población cada día más escasa. Es una especie declarada como vulnerable. Tiene un ciclo muy lento de reproducción. Es un animal acuático que se alimenta de vegetación. Los manatíes han sido cazados comunmente por su grasa y su carne, aunque hace años que la especie ha sido protegida, por lo que la caza no es el factor más acuciante en la actualidad. La pérdida de hábitat es ahora mismo su principal amenaza.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Osop.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>OSO POLAR</h2>Los osos polares dependen del hielo marino para atrapar su presa. Se abalanzan sobre las focas cuando emergen a través de sus respiraderos y las acechan mientras toman el sol al aire libre, pero el hielo se está derritiendo a medida que nuestro clima se calienta ada día. En los trece inviernos que siguen al año 2003 se produjeron las trece extensiones de hielo más pequeñas registradas por los satélites. Las temporadas de caza son cada vez más cortas, y por cada semana de hielo de nuestros mares que se pierde en los inviernos del Ártico, los osos polares pierden alrededor 7 kg de grasa.</div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Esqueleto.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>DINOSAURIOS-CRETÁCICO</h2>Numerosos fósiles de huesos, dientes, huellas y otras pruebas sólidas han revelado que la Tierra fue el terreno de los dinosaurios durante al menos 230 millones de años. Pero hasta ahora no se ha hallado ni un solo resto de dinosaurio en rocas de antigüedad inferior a 66 millones de años. En ese momento, cuando el Cretácico daba paso al Paleógeno, parece que los dinosaurios hubiesen dejaron de existir súbitamente.También siguieron ese camino algunos reptiles marinos temibles como el mosasaurio, el ictiosaurio y el plesiosaurio, así como los reptiles voladores denominados pterosaurios. Los bosques antiguos parecen haberse incendiado en gran parte del planeta. Y aunque algunos mamíferos, aves, reptiles pequeños, peces y anfibios sobrevivieron, la diversidad de las formas de vida restantes se desplomó de forma precipitada. En total, esta extinción masiva se cobró tres cuartos de la vida en la Tierra.</div>
+      </div>
+      </div>
+      
+      <hr>
+
+
+
+      <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Angeles.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>ANGELES DE MAR</h2>Conoce al ángel del mar, un pequeño y translúcido eslabón en una cadena alimenticia cuyo colapso podría tener graves consecuencias. Con no más de 2 de 5 centímetros de largo, los ángeles marinos son moluscos emparentados con las babosas y los caracoles. Sus “alas” se conocen como parapodios: extensiones especializadas de los pies, que baten para desplazarse a través del agua. Los ángeles marinos se aprovechan de otro grupo de moluscos marinos, las mariposas marinas, que también cuentan con este tipo de adaptación. No obstante, a su vez, los ángeles del mar son una fuente de alimento vital para las ballenas, aves marinas y otras muchas especies. Mientras un ángel marino se deshace de su caparazón poco después de eclosionar del huevo, las mariposas marinas retienen las suyas, y este es el problema. Su cubierta es muy delgada y se disuelve fácilmente al aumentar la acidificación del océano.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Mandril.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>MANDRIL</h2>El mandril es una especie de primate catarrino de la familia Cercopithecidae. Está emparentado con los babuinos y más estrechamente con el dril. El mandril y el dril se clasificaron en el pasado dentro del género Papio, pero investigaciones posteriores llevaron a separarlos en un género propio, Mandrillus.Los mandriles viven en grandes manadas, llegando a registrarse casi 1300 especies en una misma zona, son muy llamativos por sus tonos en el pelaje y el rostro los cuales indican su estado social y sexual, lamentablemente su carne es considerada un majar en el oeste de áfrica, además de que claro está la venta de sus pieles, y ya que habitan en grandes manadas el cazarlos es muy fácil, siendo unas presas muy fáciles de atrapar. </div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Lemur1.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2> LÉMUR RUFO BLANCO Y NEGRO DEL ESTE DE MADAGASCAR </h2>Los lémures son unos primates estrepsirrinos endémicos de la isla de Madagascar. Reciben su nombre por los lemures, fantasmas o espíritus de la mitología romana, debido a las estrepitosas vocalizaciones que emiten, sus ojos brillantes y los hábitos nocturnos de algunas de sus especies. Poseen una de las voces más fuertes de todo el reino animal, pero cada vez sus gritos se oyen con mayor frecuencia y menor intensidad gracias a la caza, ya que son fáciles de cazar, todo con el objetivo de conseguir su carne, además de la caza indiscriminada está el hecho de que si no se hacen cambios, el habitad de esta especie habrá desaparecido en su totalidad para el 2080, y no pasara mucha hasta que haya desaparecido por completo esta especie </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  <hr>
+      
+            <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Tortugas.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>TORTUGA ANGONOKA </h2>La tortuga angonoka es una tortuga criptodira de la familia Testudinidae endémica del noreste de Madagascar, ​ es una de las más raras del mundo por su forma y está en grave peligro de extinción. Es una de las tortugas más raras y que más lento crece, llegando a tardar 15 años en llegar a ser una cría, el hecho de que crezcan tan lento hace de que un solo huevo robado sea extremadamente valioso pero a su vez ser aplastante para la especie y acercarlos cada vez más a su fin, la especie ya había sido declarada extinta, pero en 1998 fue redescubierta y en la misma zona donde fue hallada (Madagascar) se creó un parque para proteger esta especie hasta que  alcanzara la edad para ser dejada en libertad.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Pangolin.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>PANGOLÍN </h2>Los folidotos ​ forman un orden de mamíferos placentarios, conocidos popularmente como pangolines. El orden contiene ocho especies vivas, ​ todas pertenecientes al género Manis, uno de los cuatro que forman la familia de los mánidos. Esta especie fue comercializada ilegalmente de 2007 a l 2017, son una presa fácil para los cazadores ya que son tímidos, sin dientes, en su mayoría nocturnos, y se quedan inmóviles cuando tienen miedo. Envueltos por una armadura de escamas de queratina, esta defensa los protege de sus depredadores históricos, pero los humanos simplemente pueden recogerlos y llevárselos. Los pangolines poseen una herencia evolutiva única, habiéndose separado de otros mamíferos mientras los dinosaurios todavía caminaban la tierra. Hay cuatro especies en África y cuatro en Asia; todos son ahora vulnerables a la extinción y dos están en peligro crítico.</div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Oso.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>OSO PANDA </h2>El panda, oso panda o panda gigante es una especie de mamífero del orden de los carnívoros. En la década de 1980, el gobierno chino lanzó una de las campañas de conservación más grandes y caras de la historia para salvar al panda gigante. Se prohibió la caza furtiva, se protegieron los bosques y se logró el reconocimiento internacional de la difícil situación del panda. El esfuerzo eventualmente llevó a un aumento en la población silvestre del panda gigante, y en 2016, la especie fue finalmente clasificada como vulnerable. Muchos grupos se mostraron jubilosos y vieron la reclasificación como un triunfo del trabajo duro y la acción del gobierno; sin embargo a otros les preocupaba que esta nueva clasificación resultara engañosa, y pudiera disminuir la financiación e investigación. </div>
+      </div>
+      </div>
+      
+
+      <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Mariposa.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>MARIPOSAS MONARCA </h2>La mariposa monarca es una especie de lepidóptero ditrisio de la familia Nymphalidae, superfamilia Papilionoidea. Es quizás la más conocida de todas las mariposas de América del Norte. Desde el siglo XIX ha sido introducida en Nueva Zelanda y en Australia. Las mariposas monarca se alimentan de algodoncillo, una planta tóxica que las hace venenosas ante posibles depredadores. Sin embargo los herbicidas están destruyendo millones de hectáreas de esta fuente de alimento esencial para las mariposas cada año. Estos inmensos y majestuosos enjambres están compuestos por individuos frágiles, que se enfrentan un entorno cambiante y un futuro profundamente incierto. Cada invierno, cientos de millones de insectos realizan un viaje de varios miles de kilómetros, a pesar de que cada uno pesa menos que un billete de euro.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Militar.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>GUACAMAYOS MILITARES</h2>Ara militaris, el guacamayo militar, ​ también conocido como guacamayo verde o papagayo verde, ​ es una especie del género Ara, de la familia de los loros cuyas poblaciones se extienden desde México hasta el norte de Argentina.​ Los guacamayos militares tienen algunas de las voces más fuertes de los bosques de Sudamérica. No conocen sus llamadas de forma innata, sino que las aprenden de sus padres y compañeros, lo que da lugar a dialectos locales que distinguen a un grupo de otro. En la naturaleza, los guacamayos militares permanecen monógamos de por vida, y como mascotas son aves excepcionalmente leales. Su belleza y buena compañía los pone en gran demanda de la industria de mascotas, pero muchos comerciantes los toman de la naturaleza, en lugar de criarlos en cautiverio. </div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Antilope.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>ANTÍLOPE SAIGA</h2>Los antílopes Saiga son supervivientes de las glaciaciones que han compartido el mundo con mamuts lanudos y tigres dientes de sable. Sus extrañas narices han evolucionado para calentar el aire frío del invierno, pero también para expulsar el polvo levantado de las llanuras en verano. Pueden anticipar el clima, desarrollar sus pelajes a modo de abrigo y emigrar al sur justo antes de que llegue la nieve. Los saigas son cazados furtivamente por sus cuernos retorcidos, que se venden en el este de Asia como analgésicos y antidepresivos, por lo que en poco tiempo podrían no quedar suficientes machos como para sacar a esta especie del peligro que se cierne sobre ella.</div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+      <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Grulla.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>GRULLAS DE CORONILLA ROJA</h2>Las grullas de coronilla roja o grullas de Manchuria del noreste de Asia son muy conocidas por sus gráciles danzas de cortejo: arquean el cuello y luego saltan al aire, volviendo a posarse en el suelo con un golpe de alas para caer de puntillas alrededor de su compañero. Cazados por su espléndido plumaje, la población residente de la isla japonesa de Hokkaido cayó tan solo a treinta individuos durante la década de 1920, pero los agricultores locales intervinieron para salvarlos, y todavía los alimentan todas las mañanas hasta el día de hoy. En el continente, las grullas de Manchuria todavía están en declive. El 92% de su hábitat en China se ha perdido en los últimos 30 años, y el que poco que queda está rodeado de ciudades, granjas y campos petroleros.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Lince.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>EL LINCE IBÉRICO  </h2>El lince ibérico es una especie de mamífero carnívoro de la familia Felidae, endémico de la península ibérica. Una de las especies más amenazadas alrededor del mundo es el lince ibérico, pese a que día a día se lucha para mantener la supervivencia de esta especie, los esfuerzos de algunas organizaciones no han sido suficiente, El principal motivo por el cual esta especie se encuentra en peligro de extinción es la caza masiva que se llevó a cabo en el siglo XX , además de esto está que en el presente hay falta de alimento, aparición de nuevos virus que atentan contra estas especies, y principalmente la destrucción de sus habitads naturales.</div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Tiburon.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>TIBURON BLANCO</h2>El gran tiburón blanco ​ es una especie de pez cartilaginoso lamniforme de la familia Lamnidae. Vive en las aguas cálidas y templadas de casi todos los océanos. Esta especie es la única del género Carcharodon que sobrevive en la actualidad. A nivel mundial se considera Vulnerable. El Tiburón Blanco o Gran Tiburón Blanco es la única especie de tiburón del género Carcharodon que está vivo actualmente. Actualmente se encuentra en estado Vulnerable de Peligro de Extinción, este animal es cazado para vender sus aletas en el marcado negro y es dejar el animal vivo solo para que se desangre sin poder hacer algo más, además que claro queda expuesto a otros depredadores. </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Atun.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>ATUN ROJO</h2>El atún rojo, atún común o atún rojo del Atlántico; conocido también en Cantabria y País Vasco como cimarrón, es una especie de atún perteneciente a la familia de los Scombridae. A aquellos individuos que superan los 150 kilogramos, se le conoce como atún rojo gigante. Es una especie marina que se encuentra en peligro crítico, perteneciendo a la familia Scombridae, la razón por la que se encuentra amenazada es por la sobrepesca, pese a que este animal se encuentra en la cima de la cadena alimenticia y el descenso de la población de especie puede afectar el ecosistema ya que aumentara en exceso la población de otros animales que antes eran regulados por el atún rojo.</div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Rana.jpg" width="370" height="330"> </div>
+        <div class="back" style=""><h2>RANA VENENOSA DORADA</h2>Tiene uno de los venenos más peligrosos que con tan solo una gota puede matar a 10.000 ratones o diez hombres adultos. Se alimenta de insectos a pesar de que su tamaño no supera los cinco centímetros y tiene solo un depredador natural. Habita en una parte de la selva del Pacifico colombiano y debido a la mineria ilegal y la tala de arboles, se ha clasificado como una espcie en via de extinción</div>
+      </div>
+    </div>
+      <div class="col-4">
+      <div class="card-grid">
+        <div class="front" style="position: absolute;"><img src="Imagenes/Ajolote.png" width="370" height="330"> </div>
+        <div class="back" style=""><h2>AJOLOTE</h2>El ajolote del náhuatl āxōlōtl es una especie de anfibio caudado de la familia Ambystomatidae. Es endémico del sistema lacustre de la Cuenca de México y ha tenido una gran influencia en la cultura mexicana. Los jolotes son neoténicos, los que significa llegan a la madurez sexual siendo apenas larvas, desarrollan sus agallas y cola, pero el hecho de que se desarrollen tan rápido hace que físicamente no se desarrollen completamente, especial mente el sistema inmune el cual es muy débil, y gracias a la contaminación en el océano estos no sobreviven, y as pocas zonas donde todavía habitan están siendo constante mente amenazadas por grande industrias para librarse de los desechos que producen</div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+    
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+    
+      
+      
+       
+  
+    
+
+
+
+    <script>
+      $('.card-grid').flip({trigger: 'hover'});
+       </script>
+
+       <script>
+      $('.card-grid').flip({trigger: 'hover'});
+       </script>
+
+
+
+
+    
+
+
+      
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html> 
